@@ -1,1 +1,233 @@
-/* You can add global styles to this file, and also import other style files */
+
+body{
+  background-color: #fffff0;
+}
+section{
+  margin-top: 5vh;
+  margin-left: 5vw;
+}
+.main_circle{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  background-color: darkgrey;
+  box-shadow: 2px 2px;
+  position: absolute;
+  z-index: 1;
+  left: 5vw;
+  top: 5vh;
+}
+.main_circle:active{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  background-color: #3e3e3e;
+  box-shadow: 0px 0px;
+}
+.main_circle_border{
+  width:70px;
+  height:70px;
+  border-radius: 50%;
+  border: 1px solid white;
+  transform: translate(19%,19%);
+}
+img, circle{
+  cursor: pointer;
+}
+.container_main{
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10%;
+}
+.main_picture{
+  width: 83%;
+  height: 50vh;
+  overflow: hidden;
+  margin-bottom: 0.5vh;
+  cursor: pointer;
+}
+.main_picture>img{
+  top: 50%;
+  width: 98%;
+  height: auto;
+}
+.pictures{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: inherit;
+}
+.pictures_container{
+  width: inherit;
+}
+.pictures .pictures_container> img{
+  top: 50%;
+  width: 20%;
+  height: 20%;
+  margin: 0 0 0 0.2vw;
+}
+.circle{
+   width:50px;
+   height:50px;
+   border-radius: 50%;
+   box-shadow: 2px 2px;
+   cursor: pointer;
+ }
+.circle_border{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid white;
+  transform: translate(18%,18%);
+}
+.main_view_none:active{
+  box-shadow: 0 0;
+  background-color: #bebfbf;
+}
+
+.main_view{
+  background-color: rgba(48, 151, 255, 0.99);
+}
+.main_view_none{
+  background-color: #bebfbf;
+}
+.circle_container{
+  width: 40vw;
+  position: absolute;
+  left: 0;
+  left: -25vw;
+  top: 15vh;
+
+}
+.circle_container>div{
+
+}
+.container{
+  transform: rotate(10deg);
+}
+.information{
+  width: 50vw;
+  height: 20vh;
+  position: absolute;
+  top: 40vh;
+  left: 10%;
+  border: 1px solid grey;
+  font-size: 2rem;
+  background-color: whitesmoke;
+  z-index: 2;
+}
+.text{
+  text-align: center;
+  margin: 10vh 0 10vh 0;
+}
+@media (min-device-width: 968px) {
+  body {
+
+  }
+
+}
+@media(min-device-width: 768px) and (max-device-width: 967px) {
+  .circle_container{
+    width: 80vw;
+    position: absolute;
+    left: 0;
+    left: -50vw;
+    top: 10vh;
+
+  }
+  .circle{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    box-shadow: -1px -1px;
+  }
+  .circle_border{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid white;
+    transform: translate(22%,22%);
+  }
+  .container_main{
+   margin-left: 10vw;
+   width: 100%;
+  }
+  .main_picture>img{
+    top: 50%;
+    margin-left: -10vw;
+    width: auto;
+    height: 50vh;
+
+  }
+  .pictures_container{
+    margin-left: 1vw;
+  }
+
+}
+
+@media(max-device-width:767px) {
+
+  .main_circle{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: darkgrey;
+    box-shadow: 2px 2px;
+    position: absolute;
+    z-index: 1;
+    left: 5vw;
+    top: 5vh;
+  }
+  .main_circle_border{
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    border: 1px solid white;
+    transform: translate(19%,19%);
+  }
+  .main_circle:active{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: #3e3e3e;
+    box-shadow: 0px 0px;
+  }
+
+  .circle_container{
+    width: 80vw;
+    position: absolute;
+    left: 0;
+    left: -50vw;
+    top: 5vh;
+
+  }
+  .circle{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    box-shadow: -1px 1px;
+  }
+  .circle_border{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid white;
+    transform: translate(22%,22%);
+  }
+  .container_main{
+    margin-left: 2vw;
+    width: 100%;
+  }
+  .main_picture>img{
+    top: 50%;
+    margin-left: -10vw;
+    width: auto;
+    height: 50vh;
+
+  }
+  .pictures_container{
+    margin-left: 1vw;
+  }
+}
